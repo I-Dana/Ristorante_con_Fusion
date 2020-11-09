@@ -65,4 +65,5 @@ body {
 	right:0;
 	position: absolute;
 	bottom: 0px;
+	z-index:1;
 }
