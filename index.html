@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet"  href="css/styles.css">
-    
-
 
     <title>Ristorante Con Fusion</title>
 </head>
@@ -22,10 +20,9 @@
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-                <span class="navbar-toggler-icon"></span>
-                
+                <span class="navbar-toggler-icon"></span>               
             </button>
-            <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="30" width="41"></a>
+            <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="30" width="41" alt="Ristorante Con Fusion"></a>
 
             <div class="collapse navbar-collapse" id="Navbar">
                 
@@ -36,16 +33,14 @@
                      <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                <a data-toggle="modal" data-target="#loginModal">
+                <a id="Login" class="button" role="button">
                     <span class="fa fa-sign-in"></span> Login</a>
-                </span>
-               
+                </span>               
             </div>
-        </div>    
-        
+        </div>           
     </nav>
 
-    <div id="loginModal" class="modal fade" role="dialog">
+    <div id="myLogin" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <!--Modal Content-->
             <div class="modal-content">
@@ -67,7 +62,7 @@
                             </div>
                             <div class="col-sm-auto">
                                 <div class="form-check">
-                                    <input type="checkbox" class="form-check-input">
+                                    <input  class="form-check-input"type="checkbox">
                                     <label class="form-check-label">Remember me</label>
                                 </div>
                             </div>                       
@@ -149,9 +144,7 @@
                                      <button type="submit" class="btn btn-primary" >Reserve</button>
                                  </div>
                             </div>
-                        </form>           
-                          
-                          
+                        </form>                                                              
                 </div>               
             </div>
         </div>
@@ -169,7 +162,7 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                    <a role="button" class="btn btn-block nav-link btn-warning" data-toggle="modal" data-html="true" data-target="#ReserveTable">
+                    <a role="button" class="btn btn-block nav-link btn-warning" id="ReserveButton">
                     Reserve Table</a>
                 </div>
                 
@@ -207,8 +200,8 @@
                      </div>  
                      <ol class="carousel-indicators">
                          <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
-                         <li data-target="#mycarousel" data-slide-to="1"></li>
-                         <li data-target="#mycarousel" data-slide-to="2"></li>
+                         <li data-target="#mycarousel" data-slide-to="1" class="active"></li>
+                         <li data-target="#mycarousel" data-slide-to="2" class="active"></li>
                      </ol>
                      <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
                          <span class="carousel-control-prev-icon"></span>
@@ -216,7 +209,7 @@
                      <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
                          <span class="carousel-control-next-icon"></span>
                      </a>                   
-                        <button class="btn btn-danger btn-sm" id="carouselButton">
+                    <button class="btn btn-danger btn-sm" id="carouselButton">
                         <span id="carousel-button-icon" class="fa fa-pause"></span>
                     </button>                   
                 </div>               
@@ -267,67 +260,8 @@
                 </div>                
             </div>
         </div>
-
-        <div class="row row-content">
-            <div class="col-sm offset-md-2 col-md-8">
-                <div class="card">
-                    <h3 class="card-header bg-warning text-white" id="Reserve">Reserve a Table</h3>
-                    <div class="card-body">
-                        <form>
-                            <div class="form-group row">
-                                <label for="number" class="col-md-2 col-form-label"> Number of Guests</label>
-                                <div class="col col-sm">
-                                    <div class="form-check form-check-inline" > 
-                                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                         <label class="form-check-label" for="inlineRadio1">1</label>
-                                     </div>
-                                     <div class="form-check form-check-inline">
-                                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                         <label class="form-check-label" for="inlineRadio2">2</label>
-                                     </div>
-                                     <div class="form-check form-check-inline">
-                                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                                         <label class="form-check-label" for="inlineRadio3">3</label>
-                                        </div>
-                                     <div class="form-check form-check-inline" > 
-                                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
-                                         <label class="form-check-label" for="inlineRadio4">4</label>
-                                     </div>
-                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
-                                        <label class="form-check-label" for="inlineRadio5">5</label>
-                                     </div>
-                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6">
-                                        <label class="form-check-label" for="inlineRadio3">6</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="date_time" class="col-md-2 col-form-label"> Date and Time </label>
-                                <div class="col-12 col-sm-3">
-                                    <input type="text" name="Date" placeholder="Date" class="form-control" id="date">
-                                </div>   
-                                <div class="col-12 col-sm-3">
-                                     <input type="text" class="form-control" id="time" name="time" placeholder="Time">
-                                </div>
-                            </div>  
-                            <div class="form-group row">
-                                 <div class="offset-md-2 col-md-10">
-                                     <button type="submit" class="btn btn-primary" >Reserve</button>
-                                 </div>
-                            </div>
-                        </form>                       
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
-
-
-
-
+        
     <footer class="footer">
         <div class="container">
             <div class="row">             
@@ -377,7 +311,6 @@
     <script>
         $(document).ready(function(){
             $("#mycarousel").carousel({ interval: 2000 });
-            $("#carouselButton").click(function(){
                 $("#carouselButton").click(function(){
                 if ($("#carouselButton").children("span").hasClass("fa-pause")) {
                     $("#mycarousel").carousel("pause");
@@ -391,6 +324,23 @@
                 }
             });
     </script>
+    <script>
+
+        $(function(){   
+            $("#Login").click(function(){
+               $("#myLogin").modal();           
+        })
+            });       
+    </script>
+    <script >
+        $(function(){
+            $("#ReserveButton").click(function(){
+                $("#ReserveTable").modal();
+            })
+
+        });
+    </script>
+
     
 </body>
 
